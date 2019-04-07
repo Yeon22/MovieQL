@@ -1,25 +1,4 @@
-export const people = [
-  {
-    id: 1,
-    name: "Gildong",
-    age: 18,
-    gender: "male",
-  },
-  {
-    id: 2,
-    name: "Chulsu",
-    age: 11,
-    gender: "male",
-  },
-  {
-    id: 3,
-    name: "Hanee",
-    age: 31,
-    gender: "female",
-  },
-];
-
-const movies = [
+let movies = [
   {
     id: 0,
     name: "Star Wars - The new one",
