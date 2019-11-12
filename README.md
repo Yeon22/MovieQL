@@ -12,4 +12,4 @@
 > localhost:4000
 
 ## Execution Screen
-![Execution Screen](/img/Execution_Screen.PNG)
+![Execution Screen](/img/ExecutionScreen.PNG)
