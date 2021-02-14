@@ -27,6 +27,6 @@ app.get('/', (req, res) => {
   res.redirect('/graphql');
 })
 
-app.listen({ port: 4000 }, () =>
+app.listen({ port: 80 }, () =>
   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
 );
