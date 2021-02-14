@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
 
 app.listen({ port }, (error) =>{
 if(error) throw error;
-  console.log('Server is ready');
+  console.log('Server is ready on ' + port);
 }
 );
