@@ -20,7 +20,6 @@
     "express": "^4.17.1",
     "graphql": "^15.5.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": "15.x",
     "npm": "7.x"
