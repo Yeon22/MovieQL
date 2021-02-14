@@ -1,4 +1,5 @@
 const resolvers = require("./graphql/resolver.js");
+const port = process.env.port || 4000;
 
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
@@ -27,6 +28,8 @@ app.get('/', (req, res) => {
   res.redirect('/graphql');
 })
 
-app.listen({ port: 80 }, () =>
-  console.log(`🚀 Server ready at http://localhost:80${server.graphqlPath}`)
+app.listen({ port }, (error) =>{
+if(error) throw error;
+  console.log(`🚀 Server ready at http://localhost:80${server.graphqlPath}`);
+}
 );
