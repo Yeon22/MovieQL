@@ -25,11 +25,11 @@ const app = express();
 server.applyMiddleware({ app });
 
 app.get('/', (req, res) => {
-  res.redirect('/graphql');
-})
+  res.send('success');
+});
 
 app.listen({ port }, (error) =>{
 if(error) throw error;
-  console.log(`🚀 Server ready at http://localhost:80${server.graphqlPath}`);
+  console.log('Server is ready');
 }
 );
