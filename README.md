@@ -1,15 +1,15 @@
-# MovieQL
-## Project Setup
-> npm install graphql-yoga  
-> npm install -g nodemon  
-> npm install --save-dev @babel/core @babel/node @babel/cli @babel/preset-env
-> npm install axios
+# YeonDo MovieQL
+
+Movie GraphQL Server deploy with Heroku.
 
 ## Project Start
+
 > npm start
 
 ## Project Show
-> localhost:4000
 
-## Execution Screen
-![Execution Screen](/img/ExecutionScreen.PNG)
+> localhost:5000
+
+## Try
+
+[Heroku URL](https://yeondo-movieql.herokuapp.com/graphql)
