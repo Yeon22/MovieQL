@@ -1,5 +1,5 @@
 const resolvers = require("./graphql/resolver.js");
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
