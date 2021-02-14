@@ -23,6 +23,10 @@ type Query {
 const app = express();
 server.applyMiddleware({ app });
 
+app.get('/', (req, res) => {
+  res.redirect('/graphql');
+})
+
 app.listen({ port: 4000 }, () =>
   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
 );
