@@ -1,5 +1,5 @@
 {
-  "name": "movieql",
+  "name": "yeondo-movieql",
   "version": "1.0.0",
   "description": "Movie API with GraphQL",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Su Yeon Bak",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^2.21.0",
@@ -15,5 +15,6 @@
     "express": "^4.17.1",
     "graphql": "^15.5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "private": false
 }
