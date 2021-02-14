@@ -25,7 +25,7 @@ const app = express();
 server.applyMiddleware({ app });
 
 app.get('/', (req, res) => {
-  res.send('success');
+  res.redirect('/graphql')
 });
 
 app.listen({ port }, (error) =>{
