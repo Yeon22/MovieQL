@@ -13,6 +13,7 @@ type Movie {
   medium_cover_image: String!
   summary: String
   description_full: String
+  synopsis: String
 }
 
 type Query {
