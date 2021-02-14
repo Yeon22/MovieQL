@@ -3,7 +3,6 @@ const port = process.env.PORT || 3000;
 
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
-const responseCachePlugin = require('apollo-server-plugin-response-cache')
 
 const server = new ApolloServer({ typeDefs: `
 type Movie {
@@ -20,8 +19,7 @@ type Query {
   movie(id: Int!): Movie!
   suggestion(id: Int!): [Movie]!
 }
-`, resolvers, playground: true, introspection: true, 
-plugins: [responseCachePlugin()] });
+`, resolvers, playground: true, introspection: true });
 
 const app = express();
 server.applyMiddleware({ app });
