@@ -19,7 +19,7 @@ type Query {
   movie(id: Int!): Movie!
   suggestion(id: Int!): [Movie]!
 }
-`, resolvers });
+`, resolvers, playground: true });
 
 const app = express();
 server.applyMiddleware({ app });
