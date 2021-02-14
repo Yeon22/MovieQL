@@ -1,4 +1,4 @@
-import {getMovies, getMovie, getSuggestions} from './db';
+const {getMovies, getMovie, getSuggestions} = require('./db.js');
 
 const resolvers = {
   Query: {
@@ -8,4 +8,4 @@ const resolvers = {
   },
 }
 
-export default resolvers;
+module.exports = resolvers;

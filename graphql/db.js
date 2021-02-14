@@ -1,11 +1,11 @@
-import axios from "axios";
+const axios = require('axios');
 
 const BASE_URL = "https://yts.am/api/v2/";
 const LIST_MOVIES_URL = `${BASE_URL}list_movies.json`;
 const MOVIE_DETAILS_URL = `${BASE_URL}movie_details.json`;
 const MOVIE_SUGGESTIONS_URL = `${BASE_URL}movie_suggestions.json`;
 
-export const getMovies = async (limit, rating) => {
+const getMovies = async (limit, rating) => {
   const {
     data: {
       data: {movies}
@@ -19,7 +19,7 @@ export const getMovies = async (limit, rating) => {
   return movies;
 };
 
-export const getMovie = async id => {
+const getMovie = async id => {
   const {
     data: {
       data: {movie}
@@ -32,7 +32,7 @@ export const getMovie = async id => {
   return movie;
 };
 
-export const getSuggestions = async id => {
+const getSuggestions = async id => {
   const {
     data: {
       data: {movies}
@@ -43,4 +43,10 @@ export const getSuggestions = async id => {
     }
   });
   return movies;
+}
+
+module.exports = {
+  getMovies,
+  getMovie,
+  getSuggestions
 }
