@@ -28,5 +28,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen({ port: 80 }, () =>
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+  console.log(`🚀 Server ready at http://localhost:80${server.graphqlPath}`)
 );
